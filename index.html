@@ -1,148 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-</head>
-<body class="body">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
     <header class="header">
-        <img class="logo" src="/public/main_logo.svg" alt="Иконка сайта"/>
-        
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__item">
-                    <a href="/" class="header__link_active">Главная</a>
-                </li>
-                <li class="header__item">
-                    <a href="/features" class="header__link">Возможности</a>
-                </li>
-                <li class="header__item">
-                    <a href="/analytics" class="header__link">Аналитика</a>
-                </li>
-                <li class="header__item">
-                    <a href="/coverage" class="header__link">Охват сетей</a>
-                </li>
-            </ul>
-        </nav>
+      <img class="logo" src="/public/main_logo.svg" alt="Иконка сайта" />
 
-        <button class="header_button">Начать</button>
+      <img src="/public/header_icon.svg" alt="Иконка списка" />
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="/" class="header__link_active">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="/features" class="header__link">Возможности</a>
+          </li>
+          <li class="header__item">
+            <a href="/analytics" class="header__link">Аналитика</a>
+          </li>
+          <li class="header__item">
+            <a href="/coverage" class="header__link">Охват сетей</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header_button">Начать</button>
     </header>
 
     <div class="top_bar">
-        <div class="top_bar_text">
-            <div class="top_bar_text_block">
-                <p class="top_bar_text1">Ежедневный мониторинг цен</p>
-                <p class="top_bar_text2">Инструмент для контроля цен в FMCG-ретейле</p>
-            </div>
-            <p class="top_bar_text3">Ежедневно получаем цены на весь ассортимент продуктовых ретейлеров и отображаем их
-в сравнительных графиках и таблицах</p>
+      <div class="top_bar_text">
+        <div class="top_bar_text_block">
+          <p class="top_bar_text1">Ежедневный мониторинг цен</p>
+          <p class="top_bar_text2">
+            Инструмент для контроля цен в FMCG-ретейле
+          </p>
         </div>
-        <img class="top_bar_img" src="/public/topbar.svg" alt="Инока top_bar"/>
+        <p class="top_bar_text3">
+          Ежедневно получаем цены на весь ассортимент продуктовых ретейлеров и
+          отображаем их в сравнительных графиках и таблицах
+        </p>
+      </div>
+      <img class="top_bar_img" src="/public/topbar.svg" alt="Инока top_bar" />
+      <button class="header_button1">Начать</button>
     </div>
 
     <div class="info">
-        <div class="info_text_block">
-            <div class="info_block">
-                <img src="/public/info_logo1.svg" alt="Иконка 1 блока информации"/>
-                <p>Автоматический сбор и анализ цен</p>
-            </div>
-            <div class="info_block">
-                <img src="/public/info_logo2.svg" alt="Иконка 2 блока информации"/>
-                <p>Цены ведущих ретейлеров в одном месте</p>
-            </div>
-            <div class="info_block">
-                <img src="/public/info_logo3.svg" alt="Иконка 3 блока информации"/>
-                <p>Ежедневные данные на ваши товары</p>
-            </div>
-            <div class="info_block">
-                <img src="/public/info_logo4.svg" alt="Иконка 4 блока информации"/>
-                <p>Мониторинг цен ваших конкурентов</p>
-            </div>
+      <div class="info_text_block">
+        <div class="info_block">
+          <img src="/public/info_logo1.svg" alt="Иконка 1 блока информации" />
+          <p>Автоматический сбор и анализ цен</p>
         </div>
+        <div class="info_block">
+          <img src="/public/info_logo2.svg" alt="Иконка 2 блока информации" />
+          <p>Цены ведущих ретейлеров в одном месте</p>
+        </div>
+        <div class="info_block">
+          <img src="/public/info_logo3.svg" alt="Иконка 3 блока информации" />
+          <p>Ежедневные данные на ваши товары</p>
+        </div>
+        <div class="info_block">
+          <img src="/public/info_logo4.svg" alt="Иконка 4 блока информации" />
+          <p>Мониторинг цен ваших конкурентов</p>
+        </div>
+      </div>
     </div>
 
     <main>
-        <section class="opportunities" aria-label="Возможности системы">
-            <div class="opportunities_text">
-                <p class="opportunities_text1">Наглядные индикаторы и подсказки</p>
-                <p class="opportunities_text2">Возможности инструмента</p>
-                <p class="opportunities_text3">Не нужно привлекать агентов для сбора цен конкурентов
-    или парсить и сопоставлять данные из разных источников. Все данные уже собраны, сопоставлены с вашей товарной матрицей
-    и выведены на дашборд</p>
-            </div>
-            <div class="opportunities_block">
-                <div class="opportunities_img">
-                    <img class="opportunities_img_1" src="/public/opportinuties.svg" alt="Картинка возможностей инструмента"/>
-                    <div class="price">
-                        <p class="price_text1">Цены всех конкурентов на одном экране</p>
-                        <p class="price_text2">По каждому SKU вы видите, у кого из конкурентов представлен товар и на сколько ваши цены различаются. Наглядные графики ежедневного среза цен и глубины скидки</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="focus" aria-label="Фокус на товарах">
-            <p>Фокус на нужных товарах</p>
-            <img src="/public/focus.svg" alt="Фокус"/>
-            <img src="/public/plus.svg" class="plus" alt="Иконка плюса"/>
-        </section>
-
-        <section class="data" aria-label="Аналитика данных">
-            <div class="data_text">
-                <p class="opportunities_text2">Прозрачные сводные данные</p>
-                <p class="opportunities_text3">Решение, которое вовремя просигнализирует на какие позиции стоит обратить внимание, на какие артикулы можно увеличить наценку, оставаясь в рынке</p>
-            </div>
-            <img  src="/public/data.svg" alt="Картинка возможностей инструмента"/>
-        </section>
-
-        <div class="form_block">
-            <div class="form_info">
-                <div class="form_text">
-                    <div class="mini_text">
-                        <p class="mini_text1">Запросить демонстрацию</p>
-                        <p class="mini_text2">Это бесплатно</p>
-                    </div>
-                    <p class="form_text1">Получите доступ к демонстрационным данным
-    и полному функционалу, оставив заявку в форме</p>
-                </div>
-                <div class="form">
-                    <p>Заполните форму</p>
-                    <form class="forma"  method="post" action="/index.html">
-                        <input placeholder="Введите e-mail"/>
-                        <select>
-                            <option>Выберите компанию</option>
-                            <option>Выберите компанию1</option>
-                            <option>Выберите компанию2</option>
-                        </select>
-                    </form>
-                    <button type="submit">Отправить</button>
-                </div>
-            </div>
+      <section class="opportunities" aria-label="Возможности системы">
+        <div class="opportunities_text">
+          <p class="opportunities_text1">Наглядные индикаторы и подсказки</p>
+          <p class="opportunities_text2">Возможности инструмента</p>
+          <p class="opportunities_text3">
+            Не нужно привлекать агентов для сбора цен конкурентов или парсить и
+            сопоставлять данные из разных источников. Все данные уже собраны,
+            сопоставлены с вашей товарной матрицей и выведены на дашборд
+          </p>
         </div>
-
-        <div class="reteil">
-            <p class="opportunities_text2">Ретейлеры</p>
-            <img  src="/public/reteil.svg" alt="Картинка возможностей инструмента"/>
+        <div class="opportunities_block">
+          <div class="opportunities_img">
+            <img
+              class="opportunities_img_1"
+              src="/public/opportinuties.svg"
+              alt="Картинка возможностей инструмента"
+            />
+            <div class="price">
+              <p class="price_text1">Цены всех конкурентов на одном экране</p>
+              <p class="price_text2">
+                По каждому SKU вы видите, у кого из конкурентов представлен
+                товар и на сколько ваши цены различаются. Наглядные графики
+                ежедневного среза цен и глубины скидки
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="focus" aria-label="Фокус на товарах">
+        <p>Фокус на нужных товарах</p>
+        <img class="focus_img" src="/public/focus.svg" alt="Фокус" />
+        <img src="/public/plus.svg" class="plus" alt="Иконка плюса" />
+      </section>
+
+      <section class="data" aria-label="Аналитика данных">
+        <div class="data_text">
+          <p class="opportunities_text2">Прозрачные сводные данные</p>
+          <p class="opportunities_text3">
+            Решение, которое вовремя просигнализирует на какие позиции стоит
+            обратить внимание, на какие артикулы можно увеличить наценку,
+            оставаясь в рынке
+          </p>
+        </div>
+        <img src="/public/data.svg" alt="Картинка возможностей инструмента" />
+      </section>
+
+      <div class="form_block">
+        <div class="form_info">
+          <div class="form_text">
+            <div class="mini_text">
+              <p class="mini_text1">Запросить демонстрацию</p>
+              <p class="mini_text2">Это бесплатно</p>
+            </div>
+            <p class="form_text1">
+              Получите доступ к демонстрационным данным и полному функционалу,
+              оставив заявку в форме
+            </p>
+          </div>
+          <div class="form">
+            <p>Заполните форму</p>
+            <form class="forma" method="post" action="/index.html">
+              <input placeholder="Введите e-mail" />
+              <select>
+                <option>Выберите компанию</option>
+                <option>Выберите компанию1</option>
+                <option>Выберите компанию2</option>
+              </select>
+            </form>
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reteil">
+        <p class="opportunities_text2">Ретейлеры</p>
+        <img
+          class="reteil_all"
+          src="/public/reteil.svg"
+          alt="Картинка возможностей инструмента"
+        />
+        <img
+          class="reteil1"
+          src="/public/Frame 34.svg"
+          alt="Картинка возможностей инструмента"
+        />
+        <img
+          class="reteil2"
+          src="/public/Frame 18.svg"
+          alt="Картинка возможностей инструмента"
+        />
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="footer_block">
-            <img src="/public/footer_logo.svg" alt="asdas"/>
-            <div>
-                <p>ООО «ДАТА КОМПАС»</p>
-                <div class="footer_info">
-                    <p>Политика конфиденциальности</p>
-                    <p>Соглашение</p>
-                </div>
-            </div>
+      <div class="footer_block">
+        <img src="/public/footer_logo.svg" alt="asdas" />
+        <div>
+          <p>ООО «ДАТА КОМПАС»</p>
+          <div class="footer_info">
+            <p>Политика конфиденциальности</p>
+            <p>Соглашение</p>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
