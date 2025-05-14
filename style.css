@@ -114,8 +114,9 @@
     width: 230px;
 }
 .info_text_block{
-   display: flex;
-    justify-content: space-between;
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
     width: 1280px;
     margin: 0 auto;
 }
@@ -180,6 +181,9 @@ main{
     width: 60px;
     height: 60px;
     cursor: pointer;
+}
+.opportunities_block{
+    display: flex;
 }
 .opportunities_img {
     position: relative;
@@ -370,4 +374,91 @@ main{
 .footer_info{
     display: flex;
     gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .header{
+        padding: 0 2rem;
+    }
+    .header__menu {
+        gap: 25px;
+    }
+    
+    .top_bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        display: flex;
+        width: 80%;
+        margin: 115px auto;
+    }
+    
+    .opportunities_block{
+        display: flex;
+        padding: 0 3rem;
+        margin-top: 200px;
+    }
+    .opportunities_img {
+        position: relative;
+    }
+
+    .opportunities_img_1 {
+        position: absolute;
+        top: -50%;
+        transform: translateX(0%); 
+        z-index: 2; 
+        height: 400px;
+    }
+
+    .price {
+        background-color: #1C1C1C;
+        width: 60%;
+        height: 50vh;
+        margin-left: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .info_text_block {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .opportunities_img_1 {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+    
+    .form_info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin-top: 40px;
+    }
 }
