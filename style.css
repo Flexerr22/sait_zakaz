@@ -5,11 +5,18 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+.icon{
+    display: none;
+}
+.header_button1{
+    display: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 120px;
+  padding: 0 1rem;
 }
 .header__menu {
   display: flex;
@@ -80,7 +87,7 @@
   display: flex;
   margin-top: 54px;
   justify-content: space-between;
-  box-sizing: border-box;
+  padding: 0 2rem;
 }
 
 .top_bar_text {
@@ -108,6 +115,9 @@
   color: #1c1c1c;
   margin: 0;
 }
+.top_bar_img{
+    width: 100%;
+}
 
 .top_bar_text3 {
   font-family: Montserrat;
@@ -123,19 +133,30 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   box-sizing: border-box;
+  display: flex;
   justify-content: center;
 }
-.info_block {
-  text-align: center;
-  width: 230px;
-}
+
 .info_text_block {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 80px;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
+
+.info_block {
+  text-align: center;
+  width: calc(25% - 80px);
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .info_block p {
   font-family: Montserrat;
   font-weight: 500;
@@ -144,9 +165,13 @@
   letter-spacing: 0%;
   text-align: center;
   color: white;
+  margin-top: 20px;
 }
 main {
   margin-top: 115px;
+}
+.opportunities{
+    padding: 0 2rem;
 }
 .opportunities_text1 {
   font-family: Montserrat;
@@ -173,7 +198,7 @@ main {
   line-height: 100%;
   letter-spacing: 0%;
   color: #1c1c1c;
-  width: 800px;
+  width: 60vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -183,6 +208,10 @@ main {
   align-items: center;
   gap: 75px;
   margin-top: 115px;
+  padding: 0 2rem;
+}
+.focus_img{
+    width: 100%;
 }
 .focus p {
   font-family: Montserrat;
@@ -248,6 +277,7 @@ main {
   flex-direction: column;
   margin-top: 115px;
   gap: 75px;
+  padding: 0 2rem;
 }
 .form_block {
   background-color: #1c1c1c;
@@ -358,14 +388,26 @@ main {
   cursor: pointer;
   margin-top: 45px;
 }
-.reteil {
-  margin-top: 115px;
+.reteil1{
+    display: none;
+}
+.reteil2{
+    display: none;
+}
+.reteil{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+.reteil_all{
+    width: 100%;
 }
 .footer {
   background-color: #1c1c1c;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: 115px;
+  padding: 0 2rem;
 }
 .footer_block {
   width: 1280px;
@@ -391,8 +433,19 @@ main {
   display: flex;
   gap: 1rem;
 }
-
 @media (max-width: 1024px) {
+  .info {
+    padding: 80px 0;
+  }
+  
+  .info_text_block {
+    gap: 60px;
+  }
+  
+  .info_block {
+    width: calc(50% - 60px);
+    min-width: 180px;
+  }
   .header {
     padding: 0 2rem;
   }
@@ -418,6 +471,9 @@ main {
   .opportunities_img {
     position: relative;
   }
+  .opportunities_text3 {
+        width: 100%;
+    }
 
   .opportunities_img_1 {
     position: absolute;
@@ -441,11 +497,69 @@ main {
   }
 }
 
+/* Адаптация для экранов до 768px */
 @media (max-width: 768px) {
+  .info {
+    padding: 60px 0;
+  }
+  
+  .info_text_block {
+    gap: 40px;
+  }
+  .opportunities_text2{
+    font-size: 30px;
+  }
+  .opportunities_text3 {
+        font-size: 20px;
+    }
+  
+  .info_block {
+    width: calc(50% - 40px);
+    min-width: 160px;
+  }
+  
+  .info_block p {
+    font-size: 18px;
+  }
+}
+
+/* Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+  .info {
+    padding: 40px 0;
+  }
+  
+  .info_text_block {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info_block {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .info_block p {
+    font-size: 14px;
+  }
+  .body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  .icon{
+    display: block;
+  }
   .header__menu {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+  }
+  .header_button1{
+    display: block;
   }
 
   .info_text_block {
@@ -529,17 +643,6 @@ main {
     color: #1c1c1c;
     margin: 0;
   }
-
-  .info_text_block {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    text-align: center;
-  }
-  .info_block p {
-    font-size: 14px;
-  }
   .info_block img {
     width: 75px;
     height: 75px;
@@ -562,12 +665,12 @@ main {
   .price {
     width: 100%;
   }
+  .focus{
+    padding: 0 20px;
+  }
   .focus_img {
-    width: 350px;
-    height: 168;
-    top: 147px;
-    left: 19.6px;
-    border-radius: 10px;
+    width: 100%;
+    padding: 0 20px;
   }
   .focus p {
     font-size: 22px;
@@ -575,24 +678,38 @@ main {
   .plus {
     width: 45;
     height: 45;
-    top: 360px;
-    left: 173px;
-    font-weight: 200;
+  }
+  .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .data_text{
+    padding: 2rem;
   }
   .data img {
-    width: 350px;
-    height: 190px;
-  }
-  .form {
-    width: 60vw;
-    position: absolute;
-    top: -150%;
-  }
-  .form input {
-    width: 50vw;
-  }
-  .form select {
     width: 100%;
+    align-items: center;
+  }
+  .form_block {
+    margin: 25vh 0 0 0;
+    height: 40vh;
+    width: 100%;
+  }
+  .form_info{
+    width: 100%;
+  }
+  
+  .form {
+    position: static;
+    margin-left: 0.5rem;
+    width: 75%;
+    transform: translateY(-45%);
+    margin-top: 30px;
+  }
+  .form input{
+    width: 85%;
   }
   .reteil_all {
     display: none;
@@ -611,8 +728,65 @@ main {
     font-size: 14px;
   }
   .form_text {
+    position: absolute;
+    transform: translateY(150%);
     display: flex;
     flex-direction: column;
-    margin-top: auto;
+    align-items: start;
+    width: 80%;
+    margin: 0;
+    
+  }
+  .opportunities_block{
+    width: 100%;
+    margin: 15vh 0 0 0;
+    padding: 0;
+    height: 80vh;
+
+  }
+  .opportunities_img_1 {
+    position: absolute;
+    top: -35%;
+    transform: translateX(-15%);
+    margin-right: auto;
+    z-index: 2;
+}
+  .price_text1{
+    font-size: 22px;
+    width: 90%;
+  }
+  .price_text2{
+    font-size: 14px;
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  .price{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: end;
+  }
+  .footer{
+    padding: 1rem 20px;
+  }
+  .footer_info{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .reteil{
+    padding: 0 20px;
+    margin-top: 20vh;
+  }
+  .reteil1{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .reteil2{
+    width: 100%;
+    display: block;
   }
 }
