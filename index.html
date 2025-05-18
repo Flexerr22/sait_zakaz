@@ -20,16 +20,16 @@
       <nav class="header__nav">
         <ul class="header__menu">
           <li class="header__item">
-            <a href="/" class="header__link_active">Главная</a>
+            <a href="#home" class="header__link_active">Главная</a>
           </li>
           <li class="header__item">
-            <a href="/features" class="header__link">Возможности</a>
+            <a href="#features" class="header__link">Возможности</a>
           </li>
           <li class="header__item">
-            <a href="/analytics" class="header__link">Аналитика</a>
+            <a href="#analytics" class="header__link">Аналитика</a>
           </li>
           <li class="header__item">
-            <a href="/coverage" class="header__link">Охват сетей</a>
+            <a href="#coverage" class="header__link">Охват сетей</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +37,19 @@
       <button class="header_button">Начать</button>
     </header>
 
-    <div class="top_bar">
+    <div class="modal" id="mobileMenu">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <ul class="modal-menu">
+          <li><a href="#home" class="modal-link active">Главная</a></li>
+          <li><a href="#features" class="modal-link">Возможности</a></li>
+          <li><a href="#analytics" class="modal-link">Аналитика</a></li>
+          <li><a href="#coverage" class="modal-link">Охват сетей</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="home" class="top_bar">
       <div class="top_bar_text">
         <div class="top_bar_text_block">
           <p class="top_bar_text1">Ежедневный мониторинг цен</p>
@@ -51,7 +63,7 @@
         </p>
       </div>
       <img class="top_bar_img" src="/public/topbar.svg" alt="Инока top_bar" />
-      <button  class="header_button1">Начать</button>
+      <button class="header_button1">Начать</button>
     </div>
 
     <div class="info">
@@ -76,7 +88,11 @@
     </div>
 
     <main>
-      <section class="opportunities" aria-label="Возможности системы">
+      <section
+        id="features"
+        class="opportunities"
+        aria-label="Возможности системы"
+      >
         <div class="opportunities_text">
           <p class="opportunities_text1">Наглядные индикаторы и подсказки</p>
           <p class="opportunities_text2">Возможности инструмента</p>
@@ -111,7 +127,7 @@
         <img src="/public/plus.svg" class="plus" alt="Иконка плюса" />
       </section>
 
-      <section class="data" aria-label="Аналитика данных">
+      <section id="analytics" class="data" aria-label="Аналитика данных">
         <div class="data_text">
           <p class="opportunities_text2">Прозрачные сводные данные</p>
           <p class="opportunities_text3">
@@ -148,7 +164,7 @@
         </div>
       </div>
 
-      <div class="reteil">
+      <div id="coverage" class="reteil">
         <p class="opportunities_text2">Ретейлеры</p>
         <img
           class="reteil_all"
@@ -180,5 +196,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
