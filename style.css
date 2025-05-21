@@ -404,7 +404,7 @@ main {
 }
 .footer {
   background-color: #1c1c1c;
-  width: 100vw;
+  width: 90vw;
   margin-left: calc(-50vw + 50%);
   margin-top: 115px;
   padding: 0 2rem;
